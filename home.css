@@ -274,8 +274,8 @@
 
   @media (min-width: 368px) {
     .carousel-item {
-        width: 100px;
-        height: 150px;
+        width: 150px;
+        height: 200px;
     }
 }
 
@@ -283,8 +283,8 @@
 @media (min-width: 576px) {
     .carousel-item {
         margin: 10px 0;
-        width: 150px;
-        height: 225px;
+        width: 200px;
+        height: 265px;
     }
 }
 
