@@ -12,19 +12,19 @@
 <body>
     
 <header class="" style="background-color: #050000f0;position: fixed;width: 100%;z-index: 2;">
-    <div class="row">
-        <div class="col-md-8 col-9">
+    <div class="container-fluid d-flex justify-content-between align-items-center py-2">
+        <div class="col-6 col-md-8"> 
             <img src="logoname.png" class="img-fluid">
             
         </div>
-        <div class="col-md-4 col-3 my-auto p-4">
+        <div class="col-6 col-md-4 my-auto p-2">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler bg-warning ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button> 
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html" style="color:white;font-weight:bold">HOME</a>
                   </li>
@@ -54,14 +54,15 @@
         </div>
         
         <div class="menu align-items-center pt-5 col-md-6">  
-      
+       
+          <!--
             <section class="carousel">
       
-              <div class="carousel__container">
-                <a href="cricket.html" style="text-decoration: none;;">
+              <div class="carousel__container row justify-content-center">
+                <a href="cricket.html" style="text-decoration: none;;" class="col-12 col-sm-6 col-md-4 mb-3">
                 <div class="carousel-item">
                   <img
-                    class="carousel-item__img"
+                    class="img-fluid carousel-item__img"
                     src="cric.png"
                     alt="people"
                   />
@@ -75,7 +76,7 @@
                   </div>
                 </div>
                 </a>
-                <a href="football.html" style="text-decoration: none;;">
+                <a href="football.html" style="text-decoration: none;;" class="col-12 col-sm-6 col-md-4 mb-3">
                 <div class="carousel-item">
                   <img
                     class="carousel-item__img"
@@ -92,7 +93,7 @@
                   </div>
                 </div>
               </a>
-                <a href="others.html" style="text-decoration: none;;">
+                <a href="others.html" style="text-decoration: none;;" class="col-12 col-sm-6 col-md-4 mb-3">
                 <div class="carousel-item ">
                   <img
                     class="carousel-item__img"
@@ -110,7 +111,56 @@
                 </div>
               </a>
               </div>
+            </section>  -->
+
+
+
+            <!--chatgpt responsive version-->
+            <section class="carousel">
+              <div class="container">
+                <div class="row justify-content-center carousel__container">  
+            
+                  
+                  <div class="col-12 col-sm-6 col-md-4 mb-3">  
+                    <a href="cricket.html" class="text-decoration-none"> 
+                      <div class="carousel-item text-center">  
+                        <img class="carousel-item__img img-fluid" src="cric.png" alt="cricket"> 
+                        <div class="carousel-item__details">
+                          <h5 class="carousel-item__details--title">CRICKET</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            
+                 
+                  <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <a href="football.html" class="text-decoration-none">
+                      <div class="carousel-item text-center">
+                        <img class="carousel-item__img img-fluid" src="foot.png" alt="football">
+                        <div class="carousel-item__details">
+                          <h5 class="carousel-item__details--title">FOOTBALL</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            
+                 
+                  <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <a href="others.html" class="text-decoration-none">
+                      <div class="carousel-item text-center">
+                        <img class="carousel-item__img img-fluid" src="oth.png" alt="others">
+                        <div class="carousel-item__details">
+                          <h5 class="carousel-item__details--title">OTHERS</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            
+                </div>
+              </div>
             </section>
+            <!--chatgpt responsive version-->
+
 
         </div>
      </div>
@@ -124,9 +174,14 @@
     <div class="container">
         <div class="row">
   
-                <div class="col-md-4 pt-2 ">
+              
+        <!--    <div class="col-md-4 pt-2 ">
                   <a href="c1.html" style="text-decoration: none;;">
-                  <div class="card  text-center p-3" style="height: 28em;">
+                  <div class="card  text-center p-3" style="height: 28em;">  -->
+
+                    <div class="col-12 col-sm-6 col-md-4 pt-2 ">
+                      <a href="c1.html" style="text-decoration: none;;">
+                      <div class="card  text-center p-3">
                     
                     <img src="https://media.licdn.com/dms/image/v2/D5612AQHb8DisCT1AFA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1725612880684?e=2147483647&v=beta&t=e5mcRJrG_gKn7Hd0sPuJJ_4eq_n6G_YXlXLdymuwYU0" class="card-img-top img-fluid" alt="..." style="height: 16em;">
                     <div class="card-body">
