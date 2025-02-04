@@ -171,8 +171,8 @@
   .carousel-item {
     
     max-width: 100%;
-    width: 125px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     background-color: #95bcd6;
     overflow: hidden;
