@@ -44,32 +44,68 @@
 .trending{
   width: 100%;
   background-color: #050000f0;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .card{
-  height: auto;
-  min-height: 20em;
+  height: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  border-radius: 8 px;
+  padding:15 px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .card-img-top{
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-@media (max-width:768px){
-  .card{
+
+.card-img-top {
+  width: 100%;
+  height: 180px;       /* NEW: Fixed image height */
+  object-fit: cover;   /* NEW: Prevent image distortion */
+  border-radius: 5px;  /* NEW: Slight rounding */
+}
+
+.card p {
+  flex-grow: 1;        /* NEW: Allows text to expand */
+  margin: 10px 0;      /* NEW: Spacing around text */
+  overflow: hidden;    /* NEW: Hide extra content */
+  text-overflow: ellipsis; /* NEW: Add "..." for long text */
+}
+
+.card a {
+  align-self: flex-end; /* NEW: Date at the bottom */
+  font-weight: bold;    /* NEW: Bold text */
+  color: blue;          /* NEW: Highlight date */
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  .trending {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+  
+  .card {
+    width: 90%;           /* Full-width cards on small screens */
+    height: auto;         /* Adjust height based on content */
     margin-bottom: 20px;
-    width: 100%; /* Ensure the card takes full width */
-    height: auto; /* Adjust height to content */
-    flex: 1 1 auto;
-    }
-    .card-img-top {
-        height: auto; /* Ensure image height is auto */
-    }
+  }
+  
+  .card-img-top {
+    height: 200px;        /* Slightly larger images for mobile */
+  }
 }
   
 
