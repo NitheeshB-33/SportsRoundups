@@ -58,8 +58,26 @@
 @media (max-width:768px){
   .card{
     margin-bottom: 20px;
+    width: 100%; /* Ensure the card takes full width */
+        height: auto; /* Adjust height to content */
+    }
+    .card-img-top {
+        height: auto; /* Ensure image height is auto */
+    }
+}
+  
+
+@media (max-width: 576px) {
+  .card {
+      margin-bottom: 20px; /* Add some margin at the bottom */
+      width: 100%; /* Ensure the card takes full width */
+      height: auto; /* Adjust height to content */
+  }
+  .card-img-top {
+      height: auto; /* Ensure image height is auto */
   }
 }
+
 /*chatgpt section*/
 
 
