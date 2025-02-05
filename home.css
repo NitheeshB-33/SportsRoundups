@@ -50,16 +50,22 @@
 .card{
   height: auto;
   min-height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card-img-top{
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 @media (max-width:768px){
   .card{
     margin-bottom: 20px;
     width: 100%; /* Ensure the card takes full width */
-        height: auto; /* Adjust height to content */
+    height: auto; /* Adjust height to content */
+    flex: 1 1 auto;
     }
     .card-img-top {
         height: auto; /* Ensure image height is auto */
